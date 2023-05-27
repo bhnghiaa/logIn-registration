@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  background-color: #016a8e;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: white !important;
+}
+button {
+  padding: 0.75rem 6rem;
+  background-image: linear-gradient(to left, #0496c6, #6ce9b9);
+
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+button:hover {
+  letter-spacing: 0.2rem;
+}
+.container {
+  width: 70%;
+  height: 70%;
+  background-image: linear-gradient(to right, #0496c6, #6ce9b9);
+  position: relative;
+  border-radius: 1.25rem;
+  display: flex;
+  box-shadow: #b4b5f1 0px 1px 25px;
+}
+.container__login,
+.container__register {
+  width: 50%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.25rem;
+}
+h1 {
+  font-weight: 700;
+  margin-top: 4rem;
+}
+input {
+  outline: none !important;
+}
+form input {
+  width: 65%;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 0 1.75em;
+  background: #e8f0fe;
+}
+form .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 1.25rem 0;
+  padding: 0 3.5em;
+}
+form .content .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+form .checkbox input {
+  width: 1rem;
+  height: 1rem;
+}
+
+.social-container .social {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.25rem;
+  color: white !important;
+}
+.social-container .social:hover {
+  background-color: #dddddd;
+  color: #016a8e !important;
+}
+.overlay__container {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  color: white;
+  text-shadow: 0 0 10px rgba(203, 234, 240, 0.5);
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-image: url("image/image.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateX(0);
+}
+.overlay__panel {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  transition: transform 0.6s ease-in-out;
+}
+.overlay__panel-left {
+  right: 0;
+  transform: translateX(0);
+}
+.right-panel-active .overlay {
+  transform: translateX(-50%);
+}
+.right-panel-active .overlay__container {
+  transform: translateX(100%);
+}
+
+.overlay__panel p {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6rem;
+}
+.ghost {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}

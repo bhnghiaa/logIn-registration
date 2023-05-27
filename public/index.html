@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Signin</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="container__login">
+        <form action="#">
+          <h1 class="title">Login hire.</h1>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <div class="content">
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <label>Remember me</label>
+            </div>
+            <div class="pass-link">
+              <a href="#">Forgot password?</a>
+            </div>
+          </div>
+          <button class="login-btn">Login</button>
+          <span>or use your account</span>
+          <div class="social-container">
+            <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+            <a href="#" class="social"><i class="lni lni-google"></i></a>
+            <a href="#" class="social"
+              ><i class="lni lni-linkedin-original"></i
+            ></a>
+          </div>
+        </form>
+      </div>
+      <div class="container__register">
+        <form action="#">
+          <h1 class="title">Register hire.</h1>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button class="login-btn">Register</button>
+          <span>or use your account</span>
+          <div class="social-container">
+            <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+            <a href="#" class="social"><i class="lni lni-google"></i></a>
+            <a href="#" class="social"
+              ><i class="lni lni-linkedin-original"></i
+            ></a>
+          </div>
+        </form>
+      </div>
+      <div class="overlay__container" id="overlay__container">
+        <div class="overlay">
+          <div class="overlay__panel overlay__panel-left">
+            <h1 class="title">
+              Start yout <br />
+              journy now
+            </h1>
+            <p>
+              if you don't have an account yet, join us and start your journey.
+            </p>
+            <button class="ghost" id="register">Register</button>
+          </div>
+          <div class="overlay__panel overlay__panel-right">
+            <h1 class="title">
+              Hello <br />
+              friends
+            </h1>
+            <p>if Yout have an account, login here and have fun</p>
+            <button class="ghost" id="login">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="firebase.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
